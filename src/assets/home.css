@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbf3e4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #46a1ff;
+    padding: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.home-icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.category-button {
+    background-color: white;
+    color: #46a1ff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button {
+    background-color: white;
+    color: #46a1ff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+.content {
+    text-align: center;
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.reaction-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.like-button, .share-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
