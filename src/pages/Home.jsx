@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/home.css'; 
+import sedekah from '../assets/sedekah.webp'; 
+import logoh from '../assets/Home.png'; 
 
 const Home = () => {
   const [likes, setLikes] = useState(1000);  
@@ -14,7 +16,7 @@ const Home = () => {
         <div className="navbar">
           <div className="navbar-left">
             <a href="#" className="home-link">
-              <img src="Home.png" alt="Home Icon" className="home-icon" />
+              <img src={logoh} alt="Home Icon" className="home-icon" />
               Home
             </a>
             <button className="category-button">sedekah</button>
@@ -29,7 +31,7 @@ const Home = () => {
 
       <main>
         <div className="content">
-          <img src="sedekah.webp" alt="Sedekah Image" className="content-image" />
+          <img src={sedekah} alt="Sedekah Image" className="content-image" />
           <div className="reaction-buttons">
             <button className="like-button" onClick={handleLike}>
               {likes} 👍

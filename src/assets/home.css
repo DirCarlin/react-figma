@@ -7,14 +7,15 @@ body {
 
 header {
     background-color: #46a1ff;
-    padding: 35px;
+    padding: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
 }
 
 .navbar-left {
