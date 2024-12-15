@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../assets/register.css';
+import { Link } from 'react-router-dom'; 
 
 const Regis = () => {
   const [email, setEmail] = useState('');
@@ -42,8 +43,12 @@ const Regis = () => {
           onChange={(e) => setConfirmPassword(e.target.value)} 
         />
         <div className="button-group">
-          <button type="submit">SELESAI</button>
-          <a href="#" className="login-link">Masuk</a>
+            <Link to='/'>
+          <button type="submit">Home</button>
+          </Link>
+          <Link to='/login'>
+          <button className="login-link" type="submit">Login</button>
+          </Link>
         </div>
       </form>
     </div>

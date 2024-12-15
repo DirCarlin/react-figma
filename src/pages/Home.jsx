@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import '../assets/home.css'; 
 import sedekah from '../assets/sedekah.webp'; 
 import logoh from '../assets/Home.png'; 
+import { Link } from 'react-router-dom'; 
 
 const Home = () => {
-  const [likes, setLikes] = useState(1000);  
-  const [shares, setShares] = useState(1000); 
+  const [likes, setLikes] = useState(10);  
+  const [shares, setShares] = useState(1); 
 
   const handleLike = () => setLikes(likes + 1); 
   const handleShare = () => setShares(shares + 1);  
@@ -23,8 +24,12 @@ const Home = () => {
           </div>
           <h1>Sedekah Indah</h1>
           <div className="navbar-right">
-            <button className="nav-button">Masuk</button>
-            <button className="nav-button">Daftar</button>
+          <Link to="/login">
+              <button className="nav-button">Masuk</button>
+            </Link>
+            <Link to="/register">
+              <button className="nav-button">Daftar</button>
+            </Link>
           </div>
         </div>
       </header>

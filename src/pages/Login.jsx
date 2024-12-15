@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../assets/login.css';
+import { Link } from 'react-router-dom'; 
 
 const login = () => {
   const [email, setEmail] = useState('');
@@ -13,6 +14,9 @@ const login = () => {
   };
 
   return (
+    
+
+
     <div className="login-container">
       <h2>Masuk Kedalam Akun</h2>
       <form onSubmit={handleSubmit}>
@@ -30,7 +34,11 @@ const login = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">MASUK</button>
+
+        <button type="submit">Login</button>
+        <Link to="/">
+        <button type="submit">Home</button>
+        </Link>
       </form>
       <p>
         Belum Punya Akun? <a href="#">DAFTAR</a>
